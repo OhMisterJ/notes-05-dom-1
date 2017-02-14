@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Notes 05 Dom, Part 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="main">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <h1>Manipulating Things in the DOM</h1>
+        <p>Javascript uses the DOM to manipulate various elements in the HTML document. The DOM stands for Document Object Model, and it represents every element in an HTML document. When you use Javascript to change, edit and otherwise modify the DOM, you are said to be "traversing the DOM".</p>
+
+        <p class="getThisQuery">Get This and change it using Javascript's querySelector method.</p>
+
+        <p>querySelector() is a Javascript method that allows you to reach into an HTML document and select either a class(.) or and id (#) and perform some kind of method or function on it. In the above example, we used querySelector() to grab getThisQuery and the used textContent(), another method, to change the text using Javascript.
+
+       <h2>Manipulating Things Using getElementById</h2>
+
+       <p>getElementById used the Id attribute in your HTML elements to select then edit and modify your HTML. It is an older method, but is widely supported. getElementById, only works on IDs (#).</p>
+
+       <p id="getThisId"> Get this using Javascript getElementById.</p>
+
+       <h2>Getting input from an HTML form</h2>
+
+
+            <p>What's your favorite animal?</p>
+
+            <input type="text" class="myAnimal" placeholder="Enter your favorite animal here...">
+
+            <button onclick="submitAnswer()">Submit</button>
+
+            <p class="response"></p>
+        
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        </div>
+    </body>
+</html>
